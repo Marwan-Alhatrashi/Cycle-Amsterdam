@@ -1,0 +1,1231 @@
+/* General Styles */
+
+body {
+    background-color: #FAF8F4;
+    margin: 0;
+    padding: 0;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0;
+    position: relative;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #3579A8;
+}
+
+nav a.active,
+#mobile-links a.active {
+    color: #3579A8;
+    border-bottom: 2px solid #3579A8;
+    padding-bottom: 5px;
+}
+
+nav a:active {
+    color: #3579A8;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+
+/* Home Page */
+
+#hero {
+    position: relative;
+    height: 450px;
+    padding: 0;
+    background-color: #032944;
+    color: white;
+    margin-top: 0;
+}
+
+#hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 79%;
+    opacity: 0.65;
+}
+
+#hero h1 {
+    position: relative;
+    padding-top: 70px;
+    padding-left: 50px;
+    margin: 0;
+    color: white;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    max-width: 550px;
+}
+
+#hero p {
+    position: relative;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+#hero p:first-of-type {
+    margin-top: 20px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    background-color: #FFA629CC;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #032944;
+}
+
+#welcome {
+    background-color: white;
+    margin: 40px;
+    padding: 40px;
+}
+
+#welcome h2 {
+    color: #032944;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+#welcome p {
+    color: #032944;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+#welcome p::first-letter {
+    font-weight: 700;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 40px;
+}
+
+#info h2 {
+    grid-column: 1 / 5;
+    color: #032944;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4 {
+    background-color: #EAF5FD;
+    padding: 25px 20px;
+    min-height: 230px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#info > article {
+    border-color: #d3e8f5;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.num {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+#box1 h3,
+#box2 h3,
+#box3 h3,
+#box4 h3 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0 0 15px 0;
+}
+
+.description {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+#discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    margin: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#discover img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+#discover h2 {
+    color: #032944;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#discover p {
+    color: #032944;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 160%;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Check Your Bike */
+
+#intro {
+    background-color: #FAF8F4;
+    margin: 0;
+    padding: 0;
+}
+
+#intro img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 65%;
+}
+
+#intro h1 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+#intro p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+/* Tires, Brakes and Lights */
+
+#tires,
+#brakes,
+#lights {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+    row-gap: 8px;
+    align-content: center;
+    background-color: #EAF5FD;
+    margin: 15px 40px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#tires img,
+#brakes img,
+#lights img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+#tires h2,
+#brakes h2,
+#lights h2 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+#tires p,
+#brakes p,
+#lights p {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Safety Reminder */
+
+#safety-note {
+    background-color: #EAF5FD;
+    margin: 25px 40px 40px;
+    padding: 20px;
+    border-color: #c9dfed;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+#safety-note h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+#safety-note p {
+    text-indent: 16px;
+    letter-spacing: 0.16px;
+    word-spacing: 0.8px;
+    line-height: 1.6;
+}
+
+#safety-note ul {
+    padding-left: 30px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* Cycling Rules */
+
+#rules-banner {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#rules-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 40px;
+}
+
+#rules-intro h1 {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#rules-intro > p {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    text-align: center;
+}
+
+#bike-lane,
+#traffic-signs,
+#traffic-light {
+    text-align: center;
+}
+
+#bike-lane img,
+#traffic-signs img,
+#traffic-light img {
+    display: block;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+#bike-lane h2,
+#traffic-signs h2,
+#traffic-light h2 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+#bike-lane p,
+#traffic-signs p,
+#traffic-light p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Recommendations */
+
+#recommendations-banner {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+#recommendations-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 40px;
+}
+
+#recommendations-intro h1 {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#recommendations-intro > p {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    margin: 0;
+}
+
+#city-bike,
+#e-bike,
+#folding-bike {
+    background-color: #EAF5FD;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#city-bike img,
+#e-bike img,
+#folding-bike img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#city-bike h2,
+#e-bike h2,
+#folding-bike h2 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+#city-bike p,
+#e-bike p,
+#folding-bike p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Bike Tips */
+
+#tips-banner {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+#tips-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 40px;
+}
+
+#tips-intro h1 {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#tips-intro > p {
+    grid-column: 1 / 4;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    margin: 0;
+}
+
+#bike-lock,
+#hand-signals,
+#no-phone {
+    background-color: #EAF5FD;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#bike-lock img,
+#hand-signals img,
+#no-phone img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#bike-lock h2,
+#hand-signals h2,
+#no-phone h2 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+#bike-lock p,
+#hand-signals p,
+#no-phone p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Contact */
+
+#contact-banner {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+#contact-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: max-content 1fr;
+    align-items: start;
+    column-gap: 40px;
+    margin: 40px;
+}
+
+#contact-section h1 {
+    grid-column: 1;
+    grid-row: 1;
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0 0 20px 0;
+}
+
+#contact-section > p {
+    grid-column: 1;
+    grid-row: 2;
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+}
+
+#contact-form {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    min-width: 0;
+    background-color: #EAF5FD;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form h2 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+#contact-form label {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border-color: #032944;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#contact-form textarea {
+    height: 120px;
+}
+
+#contact-form input.send-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #032944;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#contact-form input.send-button:hover {
+    background-color: #FFA629;
+    color: #032944;
+}
+
+
+/* Thank You Message */
+
+#thank-you {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#thank-you:target {
+    display: flex;
+}
+
+.popup {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    max-width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: #ccddea;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.popup h2 {
+    color: #032944;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.popup p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.close-button {
+    display: inline-block;
+    background-color: #032944;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.close-button:hover {
+    background-color: #FFA629;
+    color: #032944;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+footer p {
+    color: #032944;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+
+
+/* Cookie Message */
+
+#cookie-message {
+    position: sticky;
+    bottom: 12px;
+    max-width: 520px;
+    margin: 12px;
+    z-index: 9999;
+    padding: 12px 16px;
+    border-color: #ccddea;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    font-size: 13px;
+}
+
+#cookie-message p {
+    margin: 0;
+}
+
+#cookie-message a {
+    float: right;
+    color: #032944;
+    margin-left: 15px;
+}
+
+#cookie-message:target {
+    display: none;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 0;
+        position: relative;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #mobile-menu summary {
+        font-size: 28px;
+        color: #032944;
+        list-style: none;
+    }
+
+    #mobile-links {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 30px 0;
+        text-align: center;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    #mobile-links a {
+        display: block;
+        color: #032944;
+        background-color: white;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #mobile-links a:hover,
+    #mobile-links a.active {
+        color: #3579A8;
+    }
+
+
+    /* Home - Mobile */
+
+    #hero {
+        height: 300px;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+        padding-top: 40px;
+        padding-left: 20px;
+        max-width: 300px;
+    }
+
+    #hero p {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .button {
+        margin-left: 20px;
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    #welcome {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #welcome h2 {
+        font-size: 24px;
+    }
+
+    #welcome p {
+        font-size: 15px;
+    }
+
+    #info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    #info h2 {
+        grid-column: 1;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #box1,
+    #box2,
+    #box3,
+    #box4 {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    #discover {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #discover img {
+        height: 220px;
+    }
+
+    #discover h2 {
+        font-size: 24px;
+    }
+
+    #discover p {
+        font-size: 15px;
+    }
+
+
+    /* Check Your Bike - Mobile */
+
+    #intro img {
+        height: 180px;
+    }
+
+    #intro h1 {
+        font-size: 26px;
+    }
+
+    #intro p {
+        font-size: 15px;
+    }
+
+    #tires,
+    #brakes,
+    #lights {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    #tires img,
+    #brakes img,
+    #lights img {
+        grid-column: 1;
+        grid-row: 1;
+        height: 180px;
+    }
+
+    #tires h2,
+    #brakes h2,
+    #lights h2 {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 20px;
+    }
+
+    #tires p,
+    #brakes p,
+    #lights p {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #safety-note {
+        margin: 20px;
+    }
+
+
+    /* Cycling Rules - Mobile */
+
+    #rules-banner {
+        height: 180px;
+    }
+
+    #rules-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    #rules-intro h1 {
+        grid-column: 1;
+        font-size: 26px;
+    }
+
+    #rules-intro > p {
+        grid-column: 1;
+    }
+
+    #bike-lane img,
+    #traffic-signs img,
+    #traffic-light img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #bike-lane h2,
+    #traffic-signs h2,
+    #traffic-light h2 {
+        font-size: 20px;
+    }
+
+
+    /* Recommendations - Mobile */
+
+    #recommendations-banner {
+        height: 180px;
+    }
+
+    #recommendations-intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    #recommendations-intro h1 {
+        grid-column: 1;
+        font-size: 26px;
+    }
+
+    #recommendations-intro > p {
+        grid-column: 1;
+    }
+
+    #city-bike img,
+    #e-bike img,
+    #folding-bike img {
+        height: 200px;
+    }
+
+    #city-bike h2,
+    #e-bike h2,
+    #folding-bike h2 {
+        font-size: 20px;
+    }
+
+
+    /* Bike Tips - Mobile */
+
+    #tips-banner {
+        height: 180px;
+    }
+
+    #tips-intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    #tips-intro h1 {
+        grid-column: 1;
+        font-size: 26px;
+    }
+
+    #tips-intro > p {
+        grid-column: 1;
+    }
+
+    #bike-lock img,
+    #hand-signals img,
+    #no-phone img {
+        height: 200px;
+    }
+
+    #bike-lock h2,
+    #hand-signals h2,
+    #no-phone h2 {
+        font-size: 20px;
+    }
+
+
+    /* Contact - Mobile */
+
+    #contact-banner {
+        height: 180px;
+    }
+
+    #contact-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+        margin: 20px;
+    }
+
+    #contact-section h1 {
+        grid-column: 1;
+        grid-row: auto;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    #contact-section > p {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    #contact-form {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 20px;
+    }
+
+
+    /* Footer - Mobile */
+
+    footer {
+        padding: 15px;
+    }
+
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: right;
+    }
+
+
+    /* Cookie Message - Mobile */
+
+    #cookie-message {
+        max-width: none;
+        margin: 8px;
+        bottom: 8px;
+    }
+
+}
+
+
+/* Desktop Responsive */
+
+@media screen and (min-width: 769px) {
+
+    #mobile-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+}
