@@ -144,7 +144,7 @@ nav a:active {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 130%;
 }
 
@@ -190,7 +190,7 @@ nav a:active {
     border-radius: 10px;
 }
 
-#info > article {
+#info>article {
     border-color: #d3e8f5;
     border-style: solid;
     border-width: 1px;
@@ -418,7 +418,7 @@ nav a:active {
     text-align: center;
 }
 
-#rules-intro > p {
+#rules-intro>p {
     grid-column: 1 / 4;
     color: #032944;
     font-family: 'Open Sans', sans-serif;
@@ -496,7 +496,7 @@ nav a:active {
     margin: 0 0 10px 0;
 }
 
-#recommendations-intro > p {
+#recommendations-intro>p {
     grid-column: 1 / 4;
     color: #032944;
     font-family: 'Open Sans', sans-serif;
@@ -575,7 +575,7 @@ nav a:active {
     margin: 0 0 10px 0;
 }
 
-#tips-intro > p {
+#tips-intro>p {
     grid-column: 1 / 4;
     color: #032944;
     font-family: 'Open Sans', sans-serif;
@@ -657,7 +657,7 @@ nav a:active {
     margin: 0 0 20px 0;
 }
 
-#contact-section > p {
+#contact-section>p {
     grid-column: 1;
     grid-row: 2;
     color: #032944;
@@ -1070,7 +1070,7 @@ footer p {
         font-size: 26px;
     }
 
-    #rules-intro > p {
+    #rules-intro>p {
         grid-column: 1;
     }
 
@@ -1105,7 +1105,7 @@ footer p {
         font-size: 26px;
     }
 
-    #recommendations-intro > p {
+    #recommendations-intro>p {
         grid-column: 1;
     }
 
@@ -1139,7 +1139,7 @@ footer p {
         font-size: 26px;
     }
 
-    #tips-intro > p {
+    #tips-intro>p {
         grid-column: 1;
     }
 
@@ -1176,7 +1176,7 @@ footer p {
         margin-bottom: 0;
     }
 
-    #contact-section > p {
+    #contact-section>p {
         grid-column: 1;
         grid-row: auto;
     }
